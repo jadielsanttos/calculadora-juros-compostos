@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="main">
+        <div class="area-calculo">
+            <h1>Juros compostos</h1>
+
+            <div class="form">
+                <form>
+                    <label for="Capital">Valor inicial</label>
+                    <input type="number" class="input_valor" placeholder="R$0,00">
+
+                    <label for="Juros mensal">Juros mensal</label>
+                    <input type="number" class="input_juros" placeholder="taxa de juros %">
+
+                    <label for="Período">Período</label>
+                    <input type="number" class="input_periodo" placeholder="em meses">
+
+                    <input type="button" value="Calcular" onclick="calcular()">
+                </form>
+            </div>
+
+            <div class="area-resultado">
+                <span id="span-montante"></span>
+                <span id="span-juros"></span>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
